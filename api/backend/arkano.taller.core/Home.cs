@@ -7,7 +7,7 @@
 
     public class Home
     {
-        private string text = "Rock & Roll!!";
+        private string text = "Rock & Roll!";
 
         public Home()
         {

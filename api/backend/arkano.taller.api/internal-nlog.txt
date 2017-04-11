@@ -16,3 +16,11 @@
    at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
    at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
    --- End of inner exception stack trace ---
+2017-04-10 23:57:03.2753 Error Parsing configuration from D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config.  ---> NLog.NLogConfigurationException: Target ownFile-web not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2017-04-10 23:57:03.2953 Warn NLog configuration while reloading Exception: NLog.NLogConfigurationException: Configuration.Reload() failed. Invalid XML?
+   at NLog.LogFactory.ReloadConfigOnTimer(Object state)

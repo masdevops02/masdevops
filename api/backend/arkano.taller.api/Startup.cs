@@ -6,14 +6,14 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-    using NLog.Extensions.Logging;
-    using NLog.Web;
 
+    // using NLog.Extensions.Logging;
+    // using NLog.Web;
     public class Startup
     {
         public Startup(IHostingEnvironment env)
         {
-            env.ConfigureNLog("nlog.config");
+            // env.ConfigureNLog("nlog.config");
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -38,9 +38,9 @@
         {
             loggerFactory.AddConsole(this.Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            loggerFactory.AddNLog();
-
-            app.AddNLogWeb();
+            
+            // loggerFactory.AddNLog();
+            // app.AddNLogWeb();
             app.UseMvc();
         }
     }

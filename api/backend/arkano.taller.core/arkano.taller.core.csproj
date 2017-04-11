@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="5.0.0-beta06" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta001" />
+  </ItemGroup>
+
+</Project>

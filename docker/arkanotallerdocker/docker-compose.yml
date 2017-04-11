@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  arkanotallerdocker:
+    image: arkanotallerdocker
+    build:
+      context: ./arkanotallerdocker
+      dockerfile: Dockerfile

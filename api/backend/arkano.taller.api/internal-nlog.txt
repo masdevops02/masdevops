@@ -1,0 +1,18 @@
+2017-04-10 23:30:47.8026 Error Parsing configuration from D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config.  ---> NLog.NLogConfigurationException: Target ownFile-web not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2017-04-10 23:43:47.3733 Error Parsing configuration from D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config.  ---> NLog.NLogConfigurationException: Target ownFile-web not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2017-04-10 23:45:55.5386 Error Parsing configuration from D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing D:\arkano\repo\masdevops\api\backend\arkano.taller.api\nlog.config.  ---> NLog.NLogConfigurationException: Target ownFile-web not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---

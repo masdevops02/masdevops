@@ -1,10 +1,6 @@
 namespace arkano.taller.api.Controllers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Http;
+    using arkano.taller.core;
     using Microsoft.AspNetCore.Mvc;
 
     [Route("api/Home")]
@@ -12,7 +8,7 @@ namespace arkano.taller.api.Controllers
     {
         public string GetHome()
         {
-            return "Rock & Roll!";
+            return new Home().Text;
         }
     }
 }

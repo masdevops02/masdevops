@@ -4,13 +4,15 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
-
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>../../project.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.0-beta1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
@@ -27,5 +29,15 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
-
+  <ItemGroup>
+    <AdditionalFiles Include="../../stylecop.json">
+      <Link>stylecop/stylecop.json</Link>
+    </AdditionalFiles>
+    <AdditionalFiles Include="../../project.ruleset">
+      <Link>stylecop/project.ruleset</Link>
+    </AdditionalFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\arkano.taller.core\arkano.taller.core.csproj" />
+  </ItemGroup>
 </Project>

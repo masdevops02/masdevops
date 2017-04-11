@@ -1,12 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
   </PropertyGroup>
-
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>../../project.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NLog" Version="5.0.0-beta06" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta001" />
   </ItemGroup>
-
+  <ItemGroup>
+    <AdditionalFiles Include="../../stylecop.json">
+      <Link>stylecop/stylecop.json</Link>
+    </AdditionalFiles>
+    <AdditionalFiles Include="../../project.ruleset">
+      <Link>stylecop/project.ruleset</Link>
+    </AdditionalFiles>
+  </ItemGroup>
 </Project>

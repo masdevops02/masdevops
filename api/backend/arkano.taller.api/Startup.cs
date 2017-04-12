@@ -28,6 +28,17 @@
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllPolicy", builder =>
+                {
+                    builder
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin()
+                    .AllowCredentials();
+                });
+            });
 
             // Add framework services.
             services.AddMvc();
@@ -38,9 +49,10 @@
         {
             loggerFactory.AddConsole(this.Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            
+
             // loggerFactory.AddNLog();
             // app.AddNLogWeb();
+            app.UseCors("AllPolicy");
             app.UseMvc();
         }
     }

@@ -13,14 +13,14 @@ class App extends Component {
           <h2>Azure in a Day</h2>
         </div>
         <p className="App-intro">
-          Bienvenidos
+          DevOps
         </p>
         <p>
           <button
             onClick={evt => {
               CallService().then(d => alert(JSON.stringify(d.data)));
             }}
-          >Realizar una Llamada al Servidor</button>
+          >Call web api</button>
         </p>
       </div>
     );

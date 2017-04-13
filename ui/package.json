@@ -1,7 +1,7 @@
 {
   "name": "ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "axios": "^0.16.1",
     "react": "^15.5.4",
